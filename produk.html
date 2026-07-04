@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produk | Kai.Clothing</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+NAVBAR
+========================================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="images/logo/logo-kaico.jpeg" alt="Kai.Clothing">
+
+<h2>Kai.Clothing</h2>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="index.html">Beranda</a></li>
+
+<li><a href="produk.html" class="active">Produk</a></li>
+
+<li><a href="promo.html">Promo</a></li>
+
+<li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+<li><a href="tentang.html">Tentang Kami</a></li>
+
+</ul>
+
+<div class="nav-kanan">
+
+<a href="keranjang.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ==========================================
+BANNER PRODUK
+========================================== -->
+
+<section class="hero halaman-produk">
+
+<div class="hero-text">
+
+<h1>
+
+Koleksi Produk Kai.Clothing
+
+</h1>
+
+<p>
+
+Temukan berbagai koleksi fashion streetwear premium
+yang nyaman digunakan dan cocok untuk berbagai aktivitas.
+
+</p>
+
+<a href="#daftar-produk" class="btn">
+
+Lihat Semua Produk
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/produk/kaos-putih.jpeg" alt="Produk Kai.Clothing">
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PENCARIAN PRODUK
+========================================== -->
+
+<section class="filter-produk">
+
+<h2>Temukan Produk Favoritmu</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Cari produk...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="kategori">
+
+<button class="kategori-btn active" data-filter="semua">
+
+Semua
+
+</button>
+
+<button class="kategori-btn" data-filter="kaos">
+
+Kaos
+
+</button>
+
+<button class="kategori-btn" data-filter="celana">
+
+Celana
+
+</button>
+
+<button class="kategori-btn" data-filter="topi">
+
+Topi
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+DAFTAR PRODUK
+========================================== -->
+
+<section class="all-products" id="daftar-produk">
+
+<div class="judul-section">
+
+<h2>Semua Produk</h2>
+
+<p>
+
+Pilih produk favoritmu dari koleksi Kai.Clothing.
+
+</p>
+
+</div>
+
+<div class="produk-container">
+
+<!-- ==========================================
+PRODUK 1
+========================================== -->
+
+<div class="produk-card" data-kategori="kaos">
+
+    <span class="label-produk">Terlaris</span>
+
+    <img src="images/produk/kaos-hitam.jpeg" alt="Kaos Oversize Hitam">
+
+    <div class="produk-info">
+
+        <h3>Kaos Oversize Hitam</h3>
+
+        <p class="harga">
+
+            <del>Rp109.000</del>
+
+            Rp89.000
+
+        </p>
+
+        <a href="detail-produk.html?id=kaos-hitam" class="btn-card">
+            
+            Lihat Detail
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+PRODUK 2
+========================================== -->
+
+<div class="produk-card" data-kategori="kaos">
+
+    <span class="label-produk">Favorit</span>
+
+    <img src="images/produk/kaos-putih.jpeg" alt="Kaos Oversize Putih">
+
+    <div class="produk-info">
+
+        <h3>Kaos Oversize Putih</h3>
+
+        <p class="harga">
+
+            <del>Rp109.000</del>
+
+            Rp89.000
+
+        </p>
+
+        <a href="detail-produk.html?id=kaos-putih" class="btn-card">
+
+            Lihat Detail
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+PRODUK 3
+========================================== -->
+
+<div class="produk-card" data-kategori="celana">
+
+    <span class="label-produk">Terbaru</span>
+
+    <img src="images/produk/celana-hitam.jpeg" alt="Celana Wide Hitam">
+
+    <div class="produk-info">
+
+        <h3>Celana Wide Hitam</h3>
+
+        <p class="harga">
+
+            <del>Rp169.000</del>
+
+            Rp149.000
+
+        </p>
+
+        <a href="detail-produk.html?id=celana-hitam" class="btn-card">
+
+            Lihat Detail
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+PRODUK 4
+========================================== -->
+
+<div class="produk-card" data-kategori="celana">
+
+    <span class="label-produk">Terbaru</span>
+
+    <img src="images/produk/celana-abu.jpeg" alt="Celana Wide Abu">
+
+    <div class="produk-info">
+
+        <h3>Celana Wide Abu</h3>
+
+        <p class="harga">
+
+            <del>Rp169.000</del>
+
+            Rp149.000
+
+        </p>
+
+        <a href="detail-produk.html?id=celana-abu" class="btn-card">
+
+            Lihat Detail
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+PRODUK 5
+========================================== -->
+
+<div class="produk-card" data-kategori="topi">
+
+    <span class="label-produk">Favorit</span>
+
+    <img src="images/produk/topi-hitam.png" alt="Topi Trucker Hitam">
+
+    <div class="produk-info">
+
+        <h3>Topi Trucker Hitam</h3>
+
+        <p class="harga">
+
+            <del>Rp79.000</del>
+
+            Rp69.000
+
+        </p>
+
+        <a href="detail-produk.html?id=topi-hitam" class="btn-card">
+
+            Lihat Detail
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+PRODUK 6
+========================================== -->
+
+<div class="produk-card" data-kategori="topi">
+
+    <span class="label-produk">Limited</span>
+
+    <img src="images/produk/topi-pink.png" alt="Topi Trucker Pink">
+
+    <div class="produk-info">
+
+        <h3>Topi Trucker Pink</h3>
+
+        <p class="harga">
+
+            <del>Rp84.000</del>
+
+            Rp74.000
+
+        </p>
+
+        <a href="detail-produk.html?id=topi-pink" class="btn-card">
+
+            Lihat Detail
+            
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Kai.Clothing</h2>
+
+            <p>
+
+                Ekspresikan Gayamu Bersama Kai.Co.
+
+            </p>
+
+        </div>
+
+        <div class="footer-menu">
+
+            <h3>Menu</h3>
+
+            <ul>
+
+                <li><a href="index.html">Beranda</a></li>
+
+                <li><a href="produk.html">Produk</a></li>
+
+                <li><a href="promo.html">Promo</a></li>
+
+                <li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+                <li><a href="tentang.html">Tentang Kami</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-kontak">
+
+            <h3>Kontak</h3>
+
+            <p>Instagram : @officialkai.co</p>
+
+            <p>Tiktok : @officialkai.co</p>
+
+            <p>WhatsApp : 085710174497</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Kai.Clothing | Seluruh Hak Cipta Dilindungi.
+
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script src="js/produk.js"></script>
+
+<!-- ==========================================
+FLOATING WHATSAPP
+========================================== -->
+
+<a href="https://wa.me/6285710174497?text=Halo%20Admin%20Kai.Clothing,%20saya%20ingin%20bertanya%20tentang%20produk."
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat WhatsApp Admin">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    <span>Chat Admin</span>
+
+</a>
+
+</body>
+
+</html>

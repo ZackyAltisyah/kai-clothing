@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Pengiriman | Kai.Clothing</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+NAVBAR
+========================================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="images/logo/logo-kaico.jpeg"
+alt="Kai.Clothing">
+
+<h2>Kai.Clothing</h2>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="index.html">Beranda</a></li>
+
+<li><a href="produk.html">Produk</a></li>
+
+<li><a href="promo.html">Promo</a></li>
+
+<li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+<li><a href="tentang.html">Tentang Kami</a></li>
+
+</ul>
+
+<div class="nav-kanan">
+
+<a href="keranjang.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ==========================================
+BREADCRUMB
+========================================== -->
+
+<section class="breadcrumb">
+
+<div class="container">
+
+<a href="index.html">
+
+Beranda
+
+</a>
+
+<span> / </span>
+
+<strong>Pengiriman</strong>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PENGIRIMAN
+========================================== -->
+
+<section class="checkout-page">
+
+<div class="container">
+
+<div class="judul-section">
+
+<h2>Status Pengiriman</h2>
+
+<p>
+
+Pantau status pesanan Anda di halaman ini.
+
+</p>
+
+</div>
+
+<div class="checkout-wrapper">
+
+    <!-- ==========================================
+KIRI
+========================================== -->
+
+<div class="checkout-kiri">
+
+    <h3>Informasi Pengiriman</h3>
+
+    <div class="checkout-info-box">
+
+        <div class="ringkasan-item">
+
+            <strong>Nama Penerima</strong>
+
+            <span id="kirim-nama">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>No. WhatsApp</strong>
+
+            <span id="kirim-hp">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Alamat</strong>
+
+            <span id="kirim-alamat">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Kurir</strong>
+
+            <span id="kirim-kurir">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Metode Pembayaran</strong>
+
+            <span id="kirim-bayar">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>No. Invoice</strong>
+
+            <span id="kirim-invoice">INV-000000</span>
+
+        </div>
+
+    </div>
+
+    <hr style="margin:40px 0;">
+
+    <h3>Status Pengiriman</h3>
+
+    <div class="tracking-box">
+
+        <div class="tracking-item aktif">
+
+            <div class="tracking-icon">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Pesanan Dikonfirmasi</h4>
+
+                <p>Pesanan berhasil diterima sistem.</p>
+
+            </div>
+
+        </div>
+
+        <div class="tracking-item aktif">
+
+            <div class="tracking-icon">
+
+                <i class="fa-solid fa-box"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Sedang Diproses</h4>
+
+                <p>Pesanan sedang dipersiapkan.</p>
+
+            </div>
+
+        </div>
+
+        <div class="tracking-item">
+
+            <div class="tracking-icon">
+
+                <i class="fa-solid fa-truck"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Dalam Pengiriman</h4>
+
+                <p>Kurir sedang mengirim pesanan Anda.</p>
+
+            </div>
+
+        </div>
+
+        <div class="tracking-item">
+
+            <div class="tracking-icon">
+
+                <i class="fa-solid fa-house"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Pesanan Sampai</h4>
+
+                <p>Pesanan telah diterima.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+KANAN
+========================================== -->
+
+<div class="checkout-kanan">
+
+    <h3>Ringkasan Pesanan</h3>
+
+    <div class="ringkasan-item">
+
+        <span>Total Produk</span>
+
+        <span id="kirim-total-produk">0</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Subtotal</span>
+
+        <span id="kirim-subtotal">Rp0</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Ongkir</span>
+
+        <span id="kirim-ongkir">Rp15.000</span>
+
+    </div>
+
+    <hr style="margin:25px 0;">
+
+    <div class="ringkasan-item">
+
+        <strong>Total Bayar</strong>
+
+        <strong id="kirim-total">Rp0</strong>
+
+    </div>
+
+    <hr style="margin:25px 0;">
+
+    <div class="ringkasan-item">
+
+        <span>Status</span>
+
+        <span style="color:#4caf50;font-weight:600;">
+
+            Pesanan Diproses
+
+        </span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Estimasi Tiba</span>
+
+        <span id="estimasi-kirim">
+
+            2 - 3 Hari
+
+        </span>
+
+    </div>
+
+    <button
+        id="btn-selesai"
+        class="btn"
+        style="width:100%;margin-top:30px;">
+
+        <i class="fa-solid fa-house"></i>
+
+        Kembali ke Beranda
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Kai.Clothing</h2>
+
+            <p>
+
+                Ekspresikan Gayamu Bersama Kai.Co.
+
+            </p>
+
+        </div>
+
+        <div class="footer-menu">
+
+            <h3>Menu</h3>
+
+            <ul>
+
+                <li><a href="index.html">Beranda</a></li>
+
+                <li><a href="produk.html">Produk</a></li>
+
+                <li><a href="promo.html">Promo</a></li>
+
+                <li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+                <li><a href="tentang.html">Tentang Kami</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-kontak">
+
+            <h3>Kontak</h3>
+
+            <p>Instagram : @kai.clothing</p>
+
+            <p>Tiktok : @officialkai.co</p>
+
+            <p>WhatsApp : 085710174497</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Kai.Clothing | Seluruh Hak Cipta Dilindungi.
+
+    </p>
+
+</footer>
+
+<script src="js/pengiriman.js"></script>
+
+</body>
+
+</html>

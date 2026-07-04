@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Kai.Clothing</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ===============================
+NAVBAR
+=============================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="images/logo/logo-kaico.jpeg" alt="Kai.Clothing">
+
+<h2>Kai.Clothing</h2>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="index.html">Beranda</a></li>
+
+<li><a href="produk.html">Produk</a></li>
+
+<li><a href="promo.html">Promo</a></li>
+
+<li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+<li><a href="tentang.html">Tentang Kami</a></li>
+
+</ul>
+
+<div class="nav-kanan">
+
+<a href="keranjang.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ===============================
+BREADCRUMB
+=============================== -->
+
+<section class="breadcrumb">
+
+<div class="container">
+
+<a href="index.html">Beranda</a>
+
+<span> / </span>
+
+<strong>Checkout</strong>
+
+</div>
+
+</section>
+
+<!-- ===============================
+CHECKOUT
+=============================== -->
+
+<section class="checkout-page">
+
+<div class="container">
+
+<div class="judul-section">
+
+<h2>Checkout</h2>
+
+<p>
+
+Pastikan pesanan Anda sudah benar sebelum melanjutkan pembayaran.
+
+</p>
+
+</div>
+
+<div class="checkout-wrapper">
+
+<!-- ===============================
+KIRI
+=============================== -->
+
+<div class="checkout-kiri">
+
+<h3>Daftar Pesanan</h3>
+
+<div id="checkout-list">
+
+<!-- Produk akan muncul otomatis -->
+
+</div>
+
+<hr style="margin:40px 0;">
+
+<!-- ===============================
+DATA PENERIMA
+=============================== -->
+
+<h3>Data Penerima</h3>
+
+<div class="form-checkout">
+
+    <label for="nama-penerima">
+
+        Nama Lengkap
+
+    </label>
+
+    <input
+        type="text"
+        id="nama-penerima"
+        placeholder="Masukkan nama lengkap">
+
+    <label for="no-hp">
+
+        Nomor WhatsApp
+
+    </label>
+
+    <input
+        type="text"
+        id="no-hp"
+        placeholder="08xxxxxxxxxx">
+
+    <label for="alamat">
+
+        Alamat Lengkap
+
+    </label>
+
+    <textarea
+        id="alamat"
+        rows="5"
+        placeholder="Masukkan alamat lengkap"></textarea>
+
+</div>
+
+<!-- ===============================
+PILIH KURIR
+=============================== -->
+
+<h3 style="margin-top:40px;">
+
+    Pilih Kurir
+
+</h3>
+
+<div class="pilihan-kurir">
+
+    <label>
+
+        <input
+            type="radio"
+            name="kurir"
+            value="JNE"
+            checked>
+
+        JNE REG (Estimasi 2-3 Hari)
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="kurir"
+            value="J&T">
+
+        J&T Express (Estimasi 2-4 Hari)
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="kurir"
+            value="SiCepat">
+
+        SiCepat (Estimasi 1-2 Hari)
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="kurir"
+            value="AnterAja">
+
+        AnterAja (Estimasi 2-5 Hari)
+
+    </label>
+
+</div>
+
+<!-- ===============================
+METODE PEMBAYARAN
+=============================== -->
+
+<h3 style="margin-top:40px;">
+
+    Metode Pembayaran
+
+</h3>
+
+<div class="pilihan-bayar">
+
+    <label>
+
+        <input
+            type="radio"
+            name="bayar"
+            value="Transfer Bank"
+            checked>
+
+        Transfer Bank
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="bayar"
+            value="QRIS">
+
+        QRIS
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="bayar"
+            value="E-Wallet">
+
+        E-Wallet
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            name="bayar"
+            value="COD">
+
+        COD (Bayar di Tempat)
+
+    </label>
+
+</div>
+
+</div>
+
+<!-- ===============================
+KANAN
+=============================== -->
+
+<div class="checkout-kanan">
+
+    <h3>Ringkasan Pembayaran</h3>
+
+    <div class="ringkasan-item">
+
+        <span>Total Produk</span>
+
+        <span id="checkout-total-produk">0</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Total Belanja</span>
+
+        <span id="checkout-total-belanja">Rp0</span>
+
+    </div>
+
+    <button
+        id="btn-lanjut-bayar"
+        class="btn">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        Lanjut ke Pembayaran
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===============================
+FOOTER
+=============================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Kai.Clothing</h2>
+
+            <p>
+
+                Ekspresikan Gayamu Bersama Kai.Co.
+
+            </p>
+
+        </div>
+
+        <div class="footer-menu">
+
+            <h3>Menu</h3>
+
+            <ul>
+
+                <li><a href="index.html">Beranda</a></li>
+
+                <li><a href="produk.html">Produk</a></li>
+
+                <li><a href="promo.html">Promo</a></li>
+
+                <li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+                <li><a href="tentang.html">Tentang Kami</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-kontak">
+
+            <h3>Kontak</h3>
+
+            <p>Instagram : @kai.clothing</p>
+
+            <p>Tiktok : @officialkai.co</p>
+
+            <p>WhatsApp : 085710174497</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Kai.Clothing | Seluruh Hak Cipta Dilindungi.
+
+    </p>
+
+</footer>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

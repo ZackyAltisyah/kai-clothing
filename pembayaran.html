@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Pembayaran | Kai.Clothing</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+NAVBAR
+========================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="images/logo/logo-kaico.jpeg"
+                alt="Kai.Clothing">
+
+            <h2>Kai.Clothing</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="produk.html">Produk</a></li>
+
+            <li><a href="promo.html">Promo</a></li>
+
+            <li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+            <li><a href="tentang.html">Tentang Kami</a></li>
+
+        </ul>
+
+        <div class="nav-kanan">
+
+            <a href="keranjang.html">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ==========================================
+BREADCRUMB
+========================================== -->
+
+<section class="breadcrumb">
+
+    <div class="container">
+
+        <a href="index.html">
+
+            Beranda
+
+        </a>
+
+        <span> / </span>
+
+        <strong>Pembayaran</strong>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+PEMBAYARAN
+========================================== -->
+
+<section class="checkout-page">
+
+    <div class="container">
+
+        <div class="judul-section">
+
+            <h2>Pembayaran</h2>
+
+            <p>
+
+                Pastikan seluruh data pesanan Anda sudah benar sebelum melakukan konfirmasi pembayaran.
+
+            </p>
+
+        </div>
+
+        <div class="checkout-wrapper">
+
+<!-- ==========================================
+KIRI
+========================================== -->
+
+<div class="checkout-kiri">
+
+    <h3>Data Penerima</h3>
+
+    <div class="checkout-info-box">
+
+        <div class="ringkasan-item">
+
+            <strong>Nama</strong>
+
+            <span id="nama">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>No. WhatsApp</strong>
+
+            <span id="hp">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Alamat</strong>
+
+            <span id="alamat">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Kurir</strong>
+
+            <span id="kurir">-</span>
+
+        </div>
+
+        <div class="ringkasan-item">
+
+            <strong>Pembayaran</strong>
+
+            <span id="pembayaran">-</span>
+
+        </div>
+
+    </div>
+
+    <hr style="margin:40px 0;">
+
+    <h3>Daftar Produk</h3>
+
+    <div id="daftar-produk">
+
+        <!-- Produk akan dibuat otomatis oleh pembayaran.js -->
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+KANAN
+========================================== -->
+
+<div class="checkout-kanan">
+
+    <h3>Ringkasan Pembayaran</h3>
+
+    <div class="ringkasan-item">
+
+        <span>Total Produk</span>
+
+        <span id="total-produk">0</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Subtotal</span>
+
+        <span id="subtotal">Rp0</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Ongkir</span>
+
+        <span id="bayar-ongkir">Rp15.000</span>
+
+    </div>
+
+    <hr>
+
+    <div class="ringkasan-item">
+
+        <strong>Total Bayar</strong>
+
+        <strong id="total-bayar">Rp0</strong>
+
+    </div>
+
+    <hr style="margin:25px 0;">
+
+    <div class="ringkasan-item">
+
+        <span>No. Invoice</span>
+
+        <span id="invoice">INV-000000</span>
+
+    </div>
+
+    <div class="ringkasan-item">
+
+        <span>Status</span>
+
+        <span style="color:#ff9800;font-weight:600;">
+
+            Menunggu Pembayaran
+
+        </span>
+
+    </div>
+
+    <button
+        id="btn-konfirmasi"
+        class="btn"
+        style="width:100%;margin-top:30px;">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        Konfirmasi Pembayaran
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Kai.Clothing</h2>
+
+            <p>
+
+                Ekspresikan Gayamu Bersama Kai.Co.
+
+            </p>
+
+        </div>
+
+        <div class="footer-menu">
+
+            <h3>Menu</h3>
+
+            <ul>
+
+                <li><a href="index.html">Beranda</a></li>
+
+                <li><a href="produk.html">Produk</a></li>
+
+                <li><a href="promo.html">Promo</a></li>
+
+                <li><a href="cara-pembelian.html">Cara Pembelian</a></li>
+
+                <li><a href="tentang.html">Tentang Kami</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-kontak">
+
+            <h3>Kontak</h3>
+
+            <p>Instagram : @kai.clothing</p>
+
+            <p>Tiktok : @officialkai.co</p>
+
+            <p>WhatsApp : 085710174497</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Kai.Clothing | Seluruh Hak Cipta Dilindungi.
+
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script src="js/pembayaran.js"></script>
+
+</body>
+
+</html>

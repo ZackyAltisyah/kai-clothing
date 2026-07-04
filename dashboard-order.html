@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Order | Kai.Clothing</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+NAVBAR ADMIN
+========================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img
+                src="images/logo/logo-kaico.jpeg"
+                alt="Kai.Clothing">
+
+            <h2>Kai.Clothing</h2>
+
+        </div>
+
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="index.html">
+
+                    Lihat Website
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="dashboard-order.html"
+                   class="active">
+
+                    Dashboard Order
+
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <div class="nav-kanan">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+BREADCRUMB
+========================================== -->
+
+<section class="breadcrumb">
+
+    <div class="container">
+
+        <a href="index.html">
+
+            Beranda
+
+        </a>
+
+        <span> / </span>
+
+        <strong>
+
+            Dashboard Order
+
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+DASHBOARD ORDER
+========================================== -->
+
+<section class="dashboard-order-page">
+
+    <div class="container">
+
+
+        <!-- JUDUL -->
+
+        <div class="dashboard-order-header">
+
+            <div>
+
+                <span class="dashboard-label">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Admin Dashboard
+
+                </span>
+
+
+                <h1>
+
+                    Dashboard Order
+
+                </h1>
+
+
+                <p>
+
+                    Kelola dan pantau seluruh pesanan
+                    pelanggan Kai.Clothing.
+
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="btn-refresh-order"
+                class="btn-refresh-order">
+
+                <i class="fa-solid fa-rotate"></i>
+
+                Refresh Data
+
+            </button>
+
+        </div>
+
+
+        <!-- ==========================================
+        RINGKASAN ORDER AKAN DITAMBAHKAN DI PART 2
+        ========================================== -->
+
+        <!-- ==========================================
+        RINGKASAN ORDER
+        ========================================== -->
+
+        <div class="order-summary-grid">
+
+
+            <!-- TOTAL PESANAN -->
+
+            <div class="order-summary-card">
+
+                <div class="order-summary-icon">
+
+                    <i class="fa-solid fa-receipt"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>Total Pesanan</span>
+
+                    <h2 id="total-order">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- PESANAN DIPROSES -->
+
+            <div class="order-summary-card">
+
+                <div class="order-summary-icon">
+
+                    <i class="fa-solid fa-box"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>Diproses</span>
+
+                    <h2 id="order-diproses">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- PESANAN DIKIRIM -->
+
+            <div class="order-summary-card">
+
+                <div class="order-summary-icon">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>Dikirim</span>
+
+                    <h2 id="order-dikirim">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- PESANAN SELESAI -->
+
+            <div class="order-summary-card">
+
+                <div class="order-summary-icon">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>Selesai</span>
+
+                    <h2 id="order-selesai">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==========================================
+        DAFTAR PESANAN
+        ========================================== -->
+
+        <div class="order-table-box">
+
+
+            <div class="order-table-header">
+
+                <div>
+
+                    <h2>Daftar Pesanan</h2>
+
+                    <p>
+                        Data transaksi pelanggan Kai.Clothing.
+                    </p>
+
+                </div>
+
+
+                <!-- PENCARIAN ORDER -->
+
+                <div class="order-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="cari-order"
+                        placeholder="Cari invoice atau nama...">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================================
+            TABLE WRAPPER
+            ========================================== -->
+
+            <div class="order-table-responsive">
+
+
+                <table class="order-table">
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>No.</th>
+
+                            <th>Invoice</th>
+
+                            <th>Pelanggan</th>
+
+                            <th>Total Produk</th>
+
+                            <th>Total Bayar</th>
+
+                            <th>Kurir</th>
+
+                            <th>Pembayaran</th>
+
+                            <th>Status</th>
+
+                            <th>Aksi</th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody id="daftar-order">
+
+
+                        <!-- ==========================================
+                        DATA ORDER DIBUAT OLEH JAVASCRIPT
+                        ========================================== -->
+
+
+                        <tr id="order-kosong">
+
+                            <td colspan="9">
+
+                                <div class="empty-order">
+
+                                    <i class="fa-solid fa-box-open"></i>
+
+                                    <h3>Belum Ada Pesanan</h3>
+
+                                    <p>
+                                        Pesanan pelanggan akan tampil
+                                        pada dashboard ini.
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==========================================
+        DETAIL ORDER AKAN DITAMBAHKAN DI PART 3
+        ========================================== -->
+
+        <!-- ==========================================
+        MODAL DETAIL PESANAN
+        ========================================== -->
+
+        <div
+            id="modal-detail-order"
+            class="modal-order">
+
+
+            <div class="modal-order-content">
+
+
+                <!-- HEADER MODAL -->
+
+                <div class="modal-order-header">
+
+                    <div>
+
+                        <span class="dashboard-label">
+
+                            <i class="fa-solid fa-receipt"></i>
+
+                            Detail Transaksi
+
+                        </span>
+
+
+                        <h2>
+
+                            Detail Pesanan
+
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="btn-tutup-modal"
+                        class="btn-tutup-modal"
+                        aria-label="Tutup Detail Pesanan">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- ==========================================
+                INFORMASI PESANAN
+                ========================================== -->
+
+                <div class="modal-order-section">
+
+                    <h3>Informasi Pesanan</h3>
+
+
+                    <div class="detail-order-grid">
+
+
+                        <div class="detail-order-item">
+
+                            <span>No. Invoice</span>
+
+                            <strong id="detail-invoice">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-order-item">
+
+                            <span>Status Pesanan</span>
+
+                            <strong id="detail-status">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-order-item">
+
+                            <span>Kurir</span>
+
+                            <strong id="detail-kurir">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-order-item">
+
+                            <span>Metode Pembayaran</span>
+
+                            <strong id="detail-pembayaran">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==========================================
+                INFORMASI PELANGGAN
+                ========================================== -->
+
+                <div class="modal-order-section">
+
+                    <h3>Informasi Pelanggan</h3>
+
+
+                    <div class="detail-order-grid">
+
+
+                        <div class="detail-order-item">
+
+                            <span>Nama Pelanggan</span>
+
+                            <strong id="detail-nama">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-order-item">
+
+                            <span>Nomor WhatsApp</span>
+
+                            <strong id="detail-hp">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="detail-order-item detail-order-alamat">
+
+                        <span>Alamat Pengiriman</span>
+
+                        <strong id="detail-alamat">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==========================================
+                DAFTAR PRODUK
+                ========================================== -->
+
+                <div class="modal-order-section">
+
+                    <h3>Produk yang Dipesan</h3>
+
+
+                    <div
+                        id="detail-daftar-produk"
+                        class="detail-daftar-produk">
+
+                        <!-- PRODUK DIBUAT JAVASCRIPT -->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==========================================
+                RINGKASAN PEMBAYARAN
+                ========================================== -->
+
+                <div class="modal-order-section">
+
+                    <h3>Ringkasan Pembayaran</h3>
+
+
+                    <div class="detail-pembayaran-box">
+
+
+                        <div>
+
+                            <span>Subtotal</span>
+
+                            <strong id="detail-subtotal">
+                                Rp0
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Ongkir</span>
+
+                            <strong id="detail-ongkir">
+                                Rp0
+                            </strong>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <div class="detail-total-bayar">
+
+                            <span>Total Bayar</span>
+
+                            <strong id="detail-total">
+                                Rp0
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==========================================
+                UBAH STATUS PESANAN
+                ========================================== -->
+
+                <div class="modal-order-section">
+
+                    <h3>Ubah Status Pesanan</h3>
+
+
+                    <div class="ubah-status-order">
+
+
+                        <select id="pilih-status-order">
+
+                            <option value="Diproses">
+                                Diproses
+                            </option>
+
+                            <option value="Dikirim">
+                                Dikirim
+                            </option>
+
+                            <option value="Selesai">
+                                Selesai
+                            </option>
+
+                        </select>
+
+
+                        <button
+                            type="button"
+                            id="btn-simpan-status"
+                            class="btn">
+
+                            <i class="fa-solid fa-floppy-disk"></i>
+
+                            Simpan Status
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+JAVASCRIPT
+========================================== -->
+
+<script src="js/dashboard-order.js"></script>
+
+
+</body>
+
+</html>
